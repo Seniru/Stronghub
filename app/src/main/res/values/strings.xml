@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Stronghub</string>
+    <string name="launch_screen_moto">All things strongman, in one place</string>
+    <string name="loading_text">Loading...</string>
+</resources>

@@ -2,4 +2,7 @@
     <string name="app_name">Stronghub</string>
     <string name="launch_screen_moto">All things strongman, in one place</string>
     <string name="loading_text">Loading...</string>
+    <string name="next">Next</string>
+    <string name="onboarding_1_text">Get notified about upcoming competitions and latest results</string>
+    <string name="onboarding_1_heading">Welcome!</string>
 </resources>

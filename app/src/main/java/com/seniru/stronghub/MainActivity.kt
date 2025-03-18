@@ -10,11 +10,11 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.onboarding)
-        val intent = Intent(
+        setContentView(R.layout.signup)
+        /*val intent = Intent(
             this@MainActivity,
             OnbordingActivity::class.java
         )
-        startActivity(intent)
+        startActivity(intent)*/
     }
 }

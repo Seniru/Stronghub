@@ -5,4 +5,16 @@
     <string name="next">Next</string>
     <string name="onboarding_1_text">Get notified about upcoming competitions and latest results</string>
     <string name="onboarding_1_heading">Welcome!</string>
+    <string name="login">Login</string>
+    <string name="login_secondary_header">Welcome back!</string>
+    <string name="login_description">Please sign in to continue</string>
+    <string name="username_hint">Username</string>
+    <string name="login_password_hint">Password</string>
+    <string name="forgot_pass">Forgot password</string>
+    <string name="no_account">Don\'t have an account? </string>
+    <string name="alt_sign_up">Sign up instead</string>
+    <string name="signup">Sign up</string>
+    <string name="signup_email_hint">Email</string>
+    <string name="yes_account">"Already have an account? "</string>
+    <string name="alt_login">Login instead</string>
 </resources>

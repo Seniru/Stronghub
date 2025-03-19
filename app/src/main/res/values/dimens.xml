@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="heading_size">34sp</dimen>
+    <dimen name="secondary_heading_size">25dp</dimen>
     <dimen name="text_size">14sp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
 </resources>

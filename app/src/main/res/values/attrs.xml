@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SubscribedContestsStyle">
+        <attr name="heading" format="string" />
+        <attr name="startDate" format="string" />
+    </declare-styleable>
+    <declare-styleable name="MediaStyle">
+        <attr name="mediaTitle" format="string" />
+        <attr name="username" format="string" />
+        <attr name="views" format="integer" />
+        <attr name="imageUrl" format="reference" />
+    </declare-styleable>
+</resources>

@@ -1,18 +1,16 @@
 package com.seniru.stronghub
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
-import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 
-class OnbordingActivity : AppCompatActivity() {
+class OnboardingActivity : AppCompatActivity() {
 
     var screen = 0
     val onboardingImages = arrayOf(
@@ -53,12 +51,17 @@ class OnbordingActivity : AppCompatActivity() {
         val onboardingTitle: TextView = findViewById(R.id.onboarding_title)
         val onboardingDescription: TextView = findViewById(R.id.onboarding_description)
         var currentCircle: View = findViewById(onboardingScreenCircles[0])
+
         nextButton.setOnClickListener {
             screen++;
-            currentCircle.backgroundTintList = ContextCompat.getColorStateList(this, R.color.secondary)
             if (screen >= 3) {
-
+                val loginIntent = Intent(
+                    this@OnboardingActivity,
+                    LoginActivity::class.java
+                )
+                startActivity(loginIntent)
             } else {
+                currentCircle.backgroundTintList = ContextCompat.getColorStateList(this, R.color.secondary)
                 currentCircle = findViewById(onboardingScreenCircles[screen])
                 onboardingImage.setImageResource(onboardingImages[screen])
                 onboardingTitle.setText(onboardingTitles[screen])

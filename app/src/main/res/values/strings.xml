@@ -71,5 +71,6 @@
     <string name="replies">%1$s comments</string>
     <string name="videos_heading">Videos</string>
     <string name="images_heading">Images</string>
+    <string name="athletes_count">Showing 9 athletes</string>
 
 </resources>

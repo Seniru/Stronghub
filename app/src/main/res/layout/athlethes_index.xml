@@ -1,6 +1,113 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="75dp" />
+
+            <SearchView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_marginLeft="15dp"
+                android:text="@string/athletes_count"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/text_size" />
+
+            <com.seniru.stronghub.ui.AthleteView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:athleteName="Žydrūnas Savickas"
+                app:countryImage="@drawable/flag_lt" />
+
+            <com.seniru.stronghub.ui.AthleteView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:athleteName="Mariusz Pudzianowski"
+                app:countryImage="@drawable/flag_pl" />
+
+            <com.seniru.stronghub.ui.AthleteView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:athleteName="Brian Shaw"
+                app:countryImage="@drawable/flag_us" />
+
+            <com.seniru.stronghub.ui.AthleteView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:athleteName="Hafthór Júlíus Björnsson"
+                app:countryImage="@drawable/flag_is" />
+
+            <com.seniru.stronghub.ui.AthleteView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:athleteName="Jón Páll Sigmarsson"
+                app:countryImage="@drawable/flag_is" />
+
+            <com.seniru.stronghub.ui.AthleteView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:athleteName="Magnús Ver Magnússon"
+                app:countryImage="@drawable/flag_is" />
+
+            <com.seniru.stronghub.ui.AthleteView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:athleteName="Bill Kazmaier"
+                app:countryImage="@drawable/flag_us" />
+
+            <com.seniru.stronghub.ui.AthleteView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:athleteName="Tom Stoltman"
+                app:countryImage="@drawable/flag_gb" />
+
+            <com.seniru.stronghub.ui.AthleteView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:athleteName="Eddie Hall"
+                app:countryImage="@drawable/flag_gb" />
+
+            <com.seniru.stronghub.ui.AthleteView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:athleteName="Mitchell Hooper"
+                app:countryImage="@drawable/flag_ca" />
+
+            <com.seniru.stronghub.ui.AthleteView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:athleteName="Martins Licis"
+                app:countryImage="@drawable/flag_us" />
+
+            <com.seniru.stronghub.ui.AthleteView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:athleteName="Mateusz Kieliszkowski"
+                app:countryImage="@drawable/flag_pl" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="75dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

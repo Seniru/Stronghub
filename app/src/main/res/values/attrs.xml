@@ -19,4 +19,13 @@
         <attr name="countryImage" format="reference" />
         <attr name="athleteName" format="string" />
     </declare-styleable>
+    <declare-styleable name="ContestStyle">
+        <attr name="contestName" format="string" />
+        <attr name="contestDate" format="string" />
+        <attr name="contestLocation" format="string" />
+        <attr name="contestCategory" format="string" />
+        <attr name="contestCompleted" format="boolean" />
+        <attr name="contestWinner" format="string" />
+        <attr name="contestWinnerCountryImage" format="reference" />
+    </declare-styleable>
 </resources>

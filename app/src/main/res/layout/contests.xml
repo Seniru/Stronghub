@@ -1,6 +1,125 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="75dp" />
+
+            <SearchView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="@string/upcoming_contests"
+                android:textColor="@color/black"
+                android:textSize="@dimen/heading_size"
+                android:textStyle="bold" />
+
+            <com.seniru.stronghub.ui.ContestView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:contestName="2025 Europe's Strongest Man"
+                app:contestDate="2025-04-05"
+                app:contestLocation="Leeds, England"
+                app:contestCategory="Men's open"
+                app:contestCompleted="false" />
+
+            <com.seniru.stronghub.ui.ContestView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:contestName="2025 Siberian Power Show"
+                app:contestDate="2025-04-20"
+                app:contestLocation="Krasnoyarsk, Russia"
+                app:contestCategory="Men's open"
+                app:contestCompleted="false" />
+
+            <com.seniru.stronghub.ui.ContestView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:contestName="2025 World's Strongest Man"
+                app:contestDate="2025-05-18"
+                app:contestLocation="Sacremento, California"
+                app:contestCategory="Men's open"
+                app:contestCompleted="false" />
+
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dp"
+                android:gravity="right"
+                android:text="@string/view_more"
+                android:textColor="@color/primary"
+                android:textSize="@dimen/text_size" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="@string/results"
+                android:textColor="@color/black"
+                android:textSize="@dimen/heading_size"
+                android:textStyle="bold" />
+
+
+            <com.seniru.stronghub.ui.ContestView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:contestCategory="Men's open"
+                app:contestCompleted="true"
+                app:contestDate="2025-03-01"
+                app:contestLocation="Columbus, Ohio"
+                app:contestName="Arnold Strongman Classic 2025"
+                app:contestWinner="Mitchell Hooper"
+                app:contestWinnerCountryImage="@drawable/flag_ca" />
+
+            <com.seniru.stronghub.ui.ContestView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:contestCategory="Men's open"
+                app:contestCompleted="true"
+                app:contestDate="2025-02-01"
+                app:contestLocation="Columbus, Ohio"
+                app:contestName="2025 Britain's Strongest Man"
+                app:contestWinner="Luke Stoltman"
+                app:contestWinnerCountryImage="@drawable/flag_gb" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dp"
+                android:gravity="right"
+                android:text="@string/view_more"
+                android:textColor="@color/primary"
+                android:textSize="@dimen/text_size" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="75dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

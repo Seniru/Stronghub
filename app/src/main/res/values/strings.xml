@@ -72,5 +72,8 @@
     <string name="videos_heading">Videos</string>
     <string name="images_heading">Images</string>
     <string name="athletes_count">Showing 9 athletes</string>
+    <string name="upcoming_contests">Upcoming contests</string>
+    <string name="results">Contest results</string>
+    <string name="view_more">View more...</string>
 
 </resources>

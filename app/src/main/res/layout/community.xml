@@ -1,6 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="75dp" />
+
+            <SearchView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp" />
+
+            <com.seniru.stronghub.ui.ThreadView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:threadTitle="Welcome to the community!"
+                app:startedBy="BigStrongUser"
+                app:replies="3" />
+
+            <com.seniru.stronghub.ui.ThreadView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:threadTitle="Who is the greatest strongman of all time?"
+                app:startedBy="BigStrongUser"
+                app:replies="3" />
+
+            <com.seniru.stronghub.ui.ThreadView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:threadTitle="Is Thor Bjornsson's 501kg deadlift world record legit?"
+                app:startedBy="BigStrongUser"
+                app:replies="3" />
+
+            <com.seniru.stronghub.ui.ThreadView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:threadTitle="Greatest feat of strength?"
+                app:startedBy="BigStrongUser"
+                app:replies="3" />
+
+            <com.seniru.stronghub.ui.ThreadView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:threadTitle="Easiest way to create DIY strongman equipments"
+                app:startedBy="BigStrongUser"
+                app:replies="3" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="75dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

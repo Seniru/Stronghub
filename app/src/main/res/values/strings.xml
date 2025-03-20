@@ -67,6 +67,8 @@
     <string name="uploaded_media">Uploaded media</string>
     <string name="posted_by">Posted by %1$s</string>
     <string name="views">%1$s views</string>
+    <string name="started_by">Started by %1$s</string>
+    <string name="replies">%1$s comments</string>
     <string name="videos_heading">Videos</string>
     <string name="images_heading">Images</string>
 

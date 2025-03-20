@@ -10,4 +10,9 @@
         <attr name="views" format="integer" />
         <attr name="imageUrl" format="reference" />
     </declare-styleable>
+    <declare-styleable name="ThreadStyle">
+        <attr name="threadTitle" format="string" />
+        <attr name="startedBy" format="string" />
+        <attr name="replies" format="integer" />
+    </declare-styleable>
 </resources>
